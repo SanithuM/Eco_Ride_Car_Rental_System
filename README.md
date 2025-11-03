@@ -36,7 +36,7 @@ This project heavily emphasizes OOP principles:
 * **Language:** Java
 * **Core Packages:** `java.time.LocalDate` (for date management) and `java.util.ArrayList` (for in-memory data storage).
 
-## 🚀 How to Run
+# 🚀 How to Run
 This program does not use a database or require user input (like `Scanner`). It is designed as a simulation that runs pre-defined test cases.
 
 1.  **Ensure all `.java` files are in the same directory.** The key classes are:
