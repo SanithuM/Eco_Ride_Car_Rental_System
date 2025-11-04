@@ -66,7 +66,6 @@ public class K2559097_RunEcoRide {
         System.out.println("--- Generating Invoice for Booking 2 ---");
 
         if (booking2 != null) {
-            // (Replace with your ID)
             K2559097_Invoice invoice = system.generateInvoiceForBooking(booking2);
             invoice.printInvoiceDetails(); // This prints the full, detailed invoice
         } else {
