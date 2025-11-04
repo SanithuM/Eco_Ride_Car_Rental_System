@@ -19,7 +19,7 @@ public class K2559097_Booking {
     public K2559097_Booking(K2559097_Customer customer, K2559097_Vehicle vehicle,
                                 LocalDate rentalStartDate, LocalDate rentalEndDate, int totalKilometers) {
 
-        // Generate a simple, unique booking ID (e.g., "B-1700000000")
+        // Generate a simple, unique booking ID
         this.bookingID = "B-" + System.currentTimeMillis();
 
         this.customer = customer;
@@ -31,8 +31,7 @@ public class K2559097_Booking {
         this.deposit = 5000.0; // Set the standard refundable deposit 
     }
 
-    // --- Helper Methods ---
-
+    // Helper Methods
 
     public long getNumberOfDays() {
         // If start and end dates are the same, it's a 1-day rental.
@@ -50,7 +49,7 @@ public class K2559097_Booking {
         return !LocalDate.now().isAfter(twoDaysAfterBooking);
     }
 
-    // --- Getters ---
+    // Getters
 
     public String getBookingID() {
         return bookingID;

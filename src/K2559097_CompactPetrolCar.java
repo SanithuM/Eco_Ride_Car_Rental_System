@@ -1,6 +1,6 @@
 public class K2559097_CompactPetrolCar extends K2559097_Vehicle {
 
-    //Constructor that calls the parent (Vehicle) constructor
+    //Constructor that calls the Vehicle constructor
     public K2559097_CompactPetrolCar(String carID, String model) {
         // Pass "Compact Petrol" as the category
         super(carID, model, "Compact Petrol");

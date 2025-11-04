@@ -14,7 +14,7 @@ public abstract class K2559097_Vehicle {
         this.availabilityStatus = "Available"; // Default status
     }
 
-    // --- Getters for vehicle details ---
+    // Getters for vehicle details
 
     public String getCarID() {
         return carID;
@@ -32,31 +32,23 @@ public abstract class K2559097_Vehicle {
         return availabilityStatus;
     }
 
-    // --- Setter for updating status ---
+    // Setter for updating status
 
     public void setAvailabilityStatus(String availabilityStatus) {
         this.availabilityStatus = availabilityStatus;
     }
 
-    // --- Abstract Methods for Pricing ---
+    // Abstract Methods for Pricing
 
-    /**
-     * @return The daily rental fee for this vehicle category.
-     */
+    // @return The daily rental fee for this vehicle category
     public abstract double getDailyRentalFee();
 
-    /**
-     * @return The number of free kilometers allowed per day.
-     */
+    // The number of free kilometers allowed per day.
     public abstract int getFreeKmPerDay();
 
-    /**
-     * @return The charge for each kilometer driven over the free limit.
-     */
+    // The charge for each kilometer driven over the free limit.
     public abstract double getExtraKmCharge();
 
-    /**
-     * @return The tax rate (e.g., 0.10 for 10%) for this category.
-     */
+    // The tax rate (e.g., 0.10 for 10%) for this category.
     public abstract double getTaxRate();
 }

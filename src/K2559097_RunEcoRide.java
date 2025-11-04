@@ -4,13 +4,13 @@ public class K2559097_RunEcoRide {
 
     public static void main(String[] args) {
 
-        // --- 1. System Setup ---
+        // 1. System Setup
         System.out.println("Starting EcoRide System...");
 
         K2559097_EcoRideSystem system = new K2559097_EcoRideSystem();
         System.out.println("-----------------------------------------\n");
 
-        // --- 2. Add Vehicles to Fleet [Test Case for addVehicle] ---
+        // 2. Add Vehicles to Fleet
         System.out.println("--- Adding Vehicles ---");
         system.addVehicle(new K2559097_CompactPetrolCar("CP001", "Toyota Aqua"));
         system.addVehicle(new K2559097_HybridCar("HY001", "Toyota Prius"));
@@ -22,13 +22,13 @@ public class K2559097_RunEcoRide {
         }
         System.out.println("\n-----------------------------------------\n");
 
-        // --- 3. Register Customers ---
+        // 3. Register Customers
         System.out.println("--- Registering Customers ---");
         K2559097_Customer customer1 = system.registerCustomer("199012345V", "John Doe", "0771234567", "john.doe@email.com");
         K2559097_Customer customer2 = system.registerCustomer("198554321K", "Jane Smith", "0719876543", "jane.smith@email.com");
         System.out.println("\n-----------------------------------------\n");
 
-        // --- 4. Simulate Bookings (Test Cases) ---
+        // 4. Simulate Bookings (Test Cases)
         System.out.println("--- Simulating Bookings ---");
 
         // Get dates for booking (must be 3+ days in advance)
@@ -62,7 +62,7 @@ public class K2559097_RunEcoRide {
 
         System.out.println("\n-----------------------------------------\n");
 
-        // --- 5. Generate and Print Invoice ---
+        // 5. Generate and Print Invoice
         System.out.println("--- Generating Invoice for Booking 2 ---");
 
         if (booking2 != null) {

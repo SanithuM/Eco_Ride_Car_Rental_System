@@ -7,20 +7,20 @@ import java.util.stream.Collectors;
 
 public class K2559097_EcoRideSystem {
 
-    // --- Attributes ---
+    // Attributes
     // Using ArrayLists as an in-memory database
     private List<K2559097_Vehicle> vehicles;
     private List<K2559097_Customer> customers;
     private List<K2559097_Booking> bookings;
 
-    // --- Constructor ---
+    // Constructor
     public K2559097_EcoRideSystem() {
         this.vehicles = new ArrayList<>();
         this.customers = new ArrayList<>();
         this.bookings = new ArrayList<>();
     }
 
-    // --- Vehicle Management Methods ---
+    // Vehicle Management Methods
 
 
     public void addVehicle(K2559097_Vehicle vehicle) {
@@ -60,7 +60,7 @@ public class K2559097_EcoRideSystem {
         return null;
     }
 
-    // --- Customer Management Methods ---
+    // Customer Management Methods
 
 
     public K2559097_Customer registerCustomer(String nicOrPassport, String name, String contactNumber, String email) {
@@ -70,7 +70,7 @@ public class K2559097_EcoRideSystem {
         return newCustomer;
     }
 
-    // --- Booking Management Methods ---
+    // Booking Management Methods
 
 
     public K2559097_Booking bookCar(K2559097_Customer customer, String carID,
@@ -78,7 +78,7 @@ public class K2559097_EcoRideSystem {
 
         K2559097_Vehicle vehicle = findVehicleByID(carID);
 
-        // --- Business Rule Checks ---
+        // Business Rule Checks
         if (vehicle == null) {
             System.out.println("Booking Failed: Vehicle " + carID + " not found.");
             return null;
@@ -137,7 +137,7 @@ public class K2559097_EcoRideSystem {
                 .collect(Collectors.toList());
     }
 
-    // --- Invoice Generation Method ---
+    // Invoice Generation Method
 
     public K2559097_Invoice generateInvoiceForBooking(K2559097_Booking booking) {
         if (booking == null) {
@@ -147,7 +147,7 @@ public class K2559097_EcoRideSystem {
         return new K2559097_Invoice(booking);
     }
 
-    // --- Getters for the lists ---
+    // Getters for the lists
 
     public List<K2559097_Vehicle> getAllVehicles() {
         return vehicles;
