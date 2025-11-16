@@ -62,10 +62,7 @@ public class K2559097_EcoRideSystem {
         return newCustomer;
     }
 
-    /**
-     * NEW METHOD: Finds a customer by email.
-     * Essential for the "Login" functionality.
-     */
+
     public K2559097_Customer findCustomerByEmail(String email) {
         for (K2559097_Customer c : customers) {
             if (c.getEmail().equalsIgnoreCase(email)) {
