@@ -8,10 +8,10 @@ public class K2559097_Customer {
 
     // Constructor
     public  K2559097_Customer(String nicOrPassport, String name, String contactNumber, String email) {
-        this.nicOrPassport = this.nicOrPassport;
-        this.name = this.name;
-        this.contactNumber = this.contactNumber;
-        this.email = this.email;
+        this.nicOrPassport = nicOrPassport;
+        this.name = name;
+        this.contactNumber = contactNumber;
+        this.email = email;
     }
 
     // Getters
