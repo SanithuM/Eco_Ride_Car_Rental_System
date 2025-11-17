@@ -119,9 +119,6 @@ public class K2559097_EcoRideSystem {
                 .collect(Collectors.toList());
     }
 
-    /**
-     * NEW METHOD: Finds all bookings for a specific customer object.
-     */
     public List<K2559097_Booking> getBookingsForCustomer(K2559097_Customer customer) {
         return bookings.stream()
                 .filter(b -> b.getCustomer().equals(customer))
